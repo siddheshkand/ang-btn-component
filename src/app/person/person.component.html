@@ -1,0 +1,13 @@
+<p>
+  {{first_name}} : {{last_name}}
+  <br>
+  height : {{height}}cm ({{height_feet | number:"1.01"}} ft )
+  <span *ngIf="height > 160 && height <180" class="badge badge-warning">average+</span>
+  <br>
+  <button (click)="height_up()" class="btn btn-primary">+</button>
+  <button (click)="height_down() " class="btn btn-primary ml-1">-</button>
+  <br>
+  date :{{birth_date|date:"dd/MM/yyyy"}}
+
+</p>
+
